@@ -1,10 +1,12 @@
 import React  from 'react';
 import './App.css';
-
+import Header from './components/Header';
+import RecipeGenerator from './components/RecipeGenerator';
 function App() {
   return (
     <div>
-      <h1> Recipe Generator</h1>
+     <Header/>
+     <RecipeGenerator/>
     </div>
   );
 }
