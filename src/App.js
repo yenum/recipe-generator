@@ -1,12 +1,15 @@
 import React  from 'react';
 import './App.css';
 import Header from './components/Header';
-import RecipeGenerator from './components/RecipeGenerator';
+import Intro from './components/Intro'
+import Meal from './components/Meal'
+
 function App() {
   return (
     <div>
      <Header/>
-     <RecipeGenerator/>
+     <Intro/>
+     <Meal/>
     </div>
   );
 }
