@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f8efea;
+}
+
+.header, .intro {
+    text-align: center;
+    margin: 30px;
+    padding: 5px;
+}
+
+button {
+    border: 1px solid #e0475b;
+    border-radius: 25px;
+    padding: 10px;
+    background-color: #e0475b;
+    font-family: 'Raleway', Sans-Serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #f8efea;
+    font-size: 15px;
+    
+}
+
+.button {
+    text-align: center;
+
+}
+
+.container {
+   
+    padding: 20px;
+    width: 60%;
+    position: relative;
+}
+
+.recipes {
+    display: inline-block;
+    margin: 0 auto;
+    top: 60%;
+    left: 46%;
+    position: absolute;
+    text-align: center;
+    line-height: 25px;
+    background-color: #ded369;
+    padding: 30px;
+}
+
+img {
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+ul{
+    list-style: none;
+}
+
+#steps {
+    text-align: left;
+    margin-top: 10px;
+}
+
+h1, h2, h3, h4 {
+    Font-Family: 'Raleway', Sans-Serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #192f01
+}
+
+p, ul, ol{
+    Font-Family: 'Frank Ruhl Libre', Sans-Serif;
+    color: #333333;
+}
+
+
+

@@ -4,11 +4,12 @@ const data = require('../data.json').recipes
 
 //const url =  '../../data.json'
 const Meal =() => {
-    const [food, setFood] = useState(data)
+    const [food, setFood] = useState([])
 
     const fetchFood =  () => {
-        console.log(data.recipes)
-        setFood(data.recipes)
+        let index = Math.floor(Math.random()*data.length)
+        console.log(data[index])
+        setFood([data[index]])
     }
 
     useEffect(() => {
@@ -22,34 +23,34 @@ const Meal =() => {
 
 <div className="button">
         <button onClick={() => fetchFood()} className="btn">
-          Generate Meal
+          Generate Recipe
         </button>
       </div>
 
-        <section>
+        <section className="container">
             {food.map((f) => {
                 const {analyzedInstructions, id, image, title, extendedIngredients,servings} = f
 
                 return(
                     <article key={id} className="recipes">
                         <h3> {title}</h3>
-                        <img src={image} alt={title}/>
-                        <h4> {servings} </h4>
-                        <p>Ingredients</p>
-                        <ul>
+                        <img src={image} alt={title} width="250px" height="250px"/>
+                        <h4> Serves : {servings} </h4>
+                        <h4 id="steps">Ingredients</h4>
+                        <ul id="steps">
                         {extendedIngredients.map((d,i)=>{
                             return <li key={i}>{d.original}</li>
                         })}
                         </ul>
 
-                        <p>Steps</p>
+                        <h4 id="steps">Steps</h4>
 
                         {analyzedInstructions.length === 0 ? (
                          <span>
                        No Steps Required
                          </span>
                              ) : (
-                            <ol>
+                            <ol id="steps">
                        {analyzedInstructions.map((d, i) => {
                            return d.steps.map((x, c) => {
                     return <li key={`ing-${i}-${c}`}>{x.step}</li>;
