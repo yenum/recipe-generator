@@ -4,7 +4,7 @@ import Header from './components/Header';
 import Intro from './components/Intro'
 import Meal from './components/Meal'
 
-function App() {
+const App = () => {
   return (
     <div>
      <Header/>
@@ -14,4 +14,12 @@ function App() {
   );
 }
 
-export default App;
+export default App
+
+
+
+
+
+
+
+
