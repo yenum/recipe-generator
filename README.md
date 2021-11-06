@@ -1,7 +1,7 @@
 Phoodie App
 Version: 1.3
 
-About the project
+About the project:
 Finding recipes to cook can be overwhelming. A simple google search can help but in the times when you want quick suggestions, Google may overwhelm. Enter Phoodie App!
 This web application built in React js, allows the user to find recipes easily by a simple click of a button. It is that simple. Once the button is clicked, the app randomly generates a recipe which the user can use. 
 
